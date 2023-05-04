@@ -25,19 +25,10 @@ const todoListApp = {
             }
         }
     },
-
-    beforeCreate() {
-        console.log('Before create')
-        console.log(this.newTask)
-    },
     created() {
-        console.log('Created')
-        console.log(this.newTask)
-    },
-    beforeUpdate() {
-        console.log('Before Update')
-        console.log(this.newTask)
-    },
+        //vamos validar se tem o item no localStorage
+        this.tasks = localStorage.getItem("tasks") ?  JSON.parse(localStorage.getItem("tasks")) : this.tasks
+    }
 }
 
 Vue.createApp(todoListApp).mount('#app')
