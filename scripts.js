@@ -1,16 +1,5 @@
 var tasks = [
-    { 
-        titulo: 'Tarefa Um',
-        feita: false
-    },
-    { 
-        titulo: 'Tarefa Um',
-        feita: false
-    },
-    { 
-        titulo: 'Tarefa Um',
-        feita: true
-    },
+    
 ]
 
 const todoListApp = {
