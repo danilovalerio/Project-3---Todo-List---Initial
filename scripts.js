@@ -19,7 +19,7 @@ const todoListApp = {
             if(this.newTask.titulo) {
                 this.tasks.push(this.newTask)
                 this.newTask = { feita: false}
-                localStorage.setItem("tasks", this.tasks)
+                localStorage.setItem("tasks", JSON.stringify(this.tasks))
             } else {
                 alert("Não pode ter título em branco, preencha e tente novamente!")
             }
