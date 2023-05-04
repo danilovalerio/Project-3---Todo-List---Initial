@@ -25,6 +25,19 @@ const todoListApp = {
             }
         }
     },
+
+    beforeCreate() {
+        console.log('Before create')
+        console.log(this.newTask)
+    },
+    created() {
+        console.log('Created')
+        console.log(this.newTask)
+    },
+    beforeUpdate() {
+        console.log('Before Update')
+        console.log(this.newTask)
+    },
 }
 
 Vue.createApp(todoListApp).mount('#app')
