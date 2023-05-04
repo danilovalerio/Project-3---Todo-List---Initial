@@ -18,7 +18,8 @@ const todoListApp = {
         addTask: function(){
             if(this.newTask.titulo) {
                 this.tasks.push(this.newTask)
-                this.newTask = {}
+                this.newTask = { feita: false}
+
             } else {
                 alert("Não pode ter título em branco, preencha e tente novamente!")
             }
